@@ -1,0 +1,12 @@
+.ad-container {
+  display: grid;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.ad-container img {
+  max-width: 300px;
+  max-height: 400px;
+}

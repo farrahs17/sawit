@@ -1,0 +1,4 @@
+.postList-container {
+  display: grid;
+  grid-template-columns: 100px 20px 800px 50px 400px;
+}

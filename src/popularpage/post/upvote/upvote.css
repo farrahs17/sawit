@@ -1,0 +1,42 @@
+.upvote-container {
+  display: grid;
+  grid-template-columns: 60px;
+  grid-template-rows: 40px 30px 40px;
+}
+
+.upvote {
+  width: 30px;
+  height: 30px;
+  color: lightcoral;
+  background: none;
+  border: none;
+  box-shadow: none;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+
+button:hover {
+  border-style: solid;
+  background-color: rgba(211, 211, 211, 0.281);
+  border-image: initial;
+  transition: color 0.5s ease 0s, fill 0.5s ease 0s, box-shadow 0.5s ease 0s;
+}
+
+.downvote {
+  width: 30px;
+  height: 30px;
+  color: lightblue;
+  background: none;
+  border: none;
+  box-shadow: none;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+.upvote-text {
+  color: grey;
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 0;
+}

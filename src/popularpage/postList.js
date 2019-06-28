@@ -1,6 +1,7 @@
 import React from "react";
 import Post from "./post/post";
 import axios from "axios";
+import Ad from "../Ad/ad";
 
 class PostList extends React.Component {
   state = {
@@ -23,10 +24,11 @@ class PostList extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="postList-container">
         {this.state.posts.map(post => {
           return <Post post={post} />;
         })}
+        <Ad />
       </div>
     );
   }
