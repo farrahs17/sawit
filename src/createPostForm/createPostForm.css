@@ -1,0 +1,34 @@
+.create-form {
+  display: block;
+  width: 50%;
+}
+.create-form label {
+  display: block;
+  padding: 2%;
+}
+.create-form input {
+  width: 100%;
+}
+.create-form textarea {
+  width: 100%;
+  height: 40%;
+}
+.create-form button {
+  width: 98%;
+  margin: 2%;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background: none;
+  color: lightcoral;
+  border: 0px;
+  font-weight: 500;
+}
+
+.create-form button:hover {
+  border-style: solid;
+  background-color: rgba(211, 211, 211, 0.281);
+  border-color: lightcoral;
+  border-image: initial;
+  transition: color 0.5s ease 0s, fill 0.5s ease 0s, box-shadow 0.5s ease 0s;
+}

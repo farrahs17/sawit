@@ -1,0 +1,59 @@
+.login-container {
+  display: grid;
+  grid-template-columns: 400px 400px 100px;
+  grid-template-rows: 20px 100px 100px;
+}
+
+.login-container form {
+  margin-left: 10px;
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  grid-template-rows: 50px 10px 50px 10px 50px;
+  border: 1px solid lightcoral;
+  box-shadow: 5px 5px lightgrey;
+  border-radius: 5px;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 20%;
+  padding-bottom: 30px;
+}
+.login-container label {
+  display: block;
+  width: 100%;
+}
+#username {
+  grid-row-start: 2;
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
+  margin-bottom: 10%;
+}
+
+#password {
+  grid-row-start: 3;
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.login-container button {
+  grid-row-start: 5;
+  margin-top: 10%;
+  height: 80%;
+  width: 100%;
+  border-radius: 5px;
+  background-color: lightblue;
+  color: white;
+}
+
+.login-container button:hover,
+button:focus {
+  border-style: solid;
+  background-color: rgba(211, 211, 211, 0.281);
+  border-color: lightcoral;
+  border-image: initial;
+  transition: color 0.5s ease 0s, fill 0.5s ease 0s, box-shadow 0.5s ease 0s;
+  color: lightcoral;
+}
