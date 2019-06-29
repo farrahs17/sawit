@@ -1,0 +1,80 @@
+.postPage-container {
+  display: grid;
+  grid-template-columns: 125px 900px 50px;
+}
+.comments {
+  border: 2px solid lightgrey;
+  width: 80%;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 4%;
+  padding: 3%;
+}
+
+.post-postPage {
+  grid-column-start: 2;
+
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  min-height: 100px;
+  min-width: 80%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: grid;
+  grid-template-columns: 60px 10px 700px;
+  grid-template-rows: 1;
+}
+
+.add-comment {
+  grid-column-start: 2;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 2%;
+}
+
+.add-comment form {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.add-comment textarea {
+  width: 89%;
+  height: 6rem;
+  border-radius: 5px;
+}
+
+.add-comment button {
+  width: 30%;
+  height: 3rem;
+  margin-left: 30%;
+  font-size: 1rem;
+  margin-top: 10px;
+  border-radius: 10px;
+  background: none;
+  color: lightcoral;
+  border: 0px;
+  font-weight: 500;
+}
+
+.add-comment button:hover {
+  border: 2px solid lightcoral;
+  background-color: rgba(211, 211, 211, 0.281);
+  border-color: lightcoral;
+  border-image: initial;
+  transition: color 0.5s ease 0s, fill 0.5s ease 0s, box-shadow 0.5s ease 0s;
+}
+
+.comment {
+  border: 1px solid lightcoral;
+  border-radius: 5px;
+  margin: 2%;
+  padding: 1% 2%;
+  background-color: rgba(240, 128, 128, 0.048);
+}
+
+.comment h4 {
+  color: grey;
+}

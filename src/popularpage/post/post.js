@@ -12,7 +12,7 @@ function Post(props) {
     <div className="post-container">
       <div className="post">
         <div className="upvote-post">
-          <Upvote />
+          <Upvote postId={props.post._id} upvotes={props.post.upvotes} />
         </div>
         <div className="post-content">
           <h3 className="post-title">{props.post.title}</h3>

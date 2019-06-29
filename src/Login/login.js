@@ -1,6 +1,7 @@
 import React from "react";
 import "./login.css";
 import axios from "axios";
+import { saveToken } from "../utils/utils";
 
 class Login extends React.Component {
   state = {
@@ -16,8 +17,9 @@ class Login extends React.Component {
         password: this.state.password
       })
       .then(res => {
-        console.log(res);
-        console.log(res.data);
+        console.log(res.data.token);
+        saveToken("token", res.data.token);
+        this.props.history.push("/");
       });
   };
 

@@ -24,6 +24,7 @@ class SignUp extends React.Component {
         .then(res => {
           console.log(res);
           console.log(res.data);
+          this.props.history.push("/login");
         });
     } else {
       alert("Password does not match");
@@ -58,7 +59,7 @@ class SignUp extends React.Component {
           <label className="username-label">
             Full Name
             <input
-              onChange={e => this.handleNameChange}
+              onChange={this.handleNameChange}
               type="text"
               id="name"
               name="name"
@@ -67,7 +68,7 @@ class SignUp extends React.Component {
           <label className="email-label">
             Email
             <input
-              onChange={e => this.handleEmailChange}
+              onChange={this.handleEmailChange}
               type="text"
               id="email"
               name="email"

@@ -2,6 +2,7 @@ import React from "react";
 import Post from "./post/post";
 import axios from "axios";
 import Ad from "../Ad/ad";
+import CreatePost from "../createPost/createPost";
 
 class PostList extends React.Component {
   state = {
@@ -28,6 +29,7 @@ class PostList extends React.Component {
         {this.state.posts.map(post => {
           return <Post post={post} />;
         })}
+        <CreatePost />
         <Ad />
       </div>
     );

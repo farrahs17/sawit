@@ -1,0 +1,27 @@
+.createPost-container {
+  display: grid;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 1;
+}
+
+#createPostBtn {
+  margin-left: 10%;
+  margin-top: 30%;
+  width: 100%;
+  height: 50px;
+
+  border-radius: 5px;
+  background-color: lightcoral;
+  color: white;
+}
+
+.createPost-container button:hover,
+button:focus {
+  border-style: solid;
+  background-color: rgba(211, 211, 211, 0.281) !important;
+  border-color: lightblue;
+  border-image: initial;
+  transition: color 0.5s ease 0s, fill 0.5s ease 0s, box-shadow 0.5s ease 0s;
+  color: lightblue !important;
+}
